@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+</head>
+<body>
+  <!--this is in the the header-->
+  <div id="header">
+    <button id="btnToggleBold">Bold</button>
+    <button id="btnToggleItalics">Italics</button>
+    <button id="btnToggleUnderline">Underline</button>
+    <button class="clear-button">Clear</button>
+    <button onclick="saveFile()">Save</button>
+    <input type="file" id="fileToLoad">
+    <button onclick="loadFileAsText()">Load Selected File</button>
+    <select class="fonts-select">
+      <option selected disabled>Select font here...</option>
+      <option value="sans-serif">sans-serif</option>
+      <option value="serif">serif</option>
+      <option value="monospace">monospace</option>
+      <option value="Comic Sans MS">Comic Sans MS</option>
+      <option value="Times New Roman">Times New Roman</option>
+      <option value="Courier New">Courier New</option>
+      <option value="Verdana">Verdana</option>
+      <option value="Trebuchet MS">Trebuchet MS</option>
+      <option value="Arial Black">Arial Black</option>
+      <option value="Impact">Impact</option>
+      <option value="Bookman">Bookman</option>
+      <option value="Garamond">Garamond</option>
+      <option value="Palatino">Palatino</option>
+      <option value="Georgia">Georgia</option>     
+    </select>
+    <select name="textareafontsize" id="textareafontsize" title="Textarea Font Size">
+      <option>3</option>
+      <option>5</option>
+      <option>8</option>
+      <option>10</option>
+      <option>12</option>
+      <option>14</option>
+      <option>15</option>
+      <option>18</option>
+      <option>20</option>
+      <option>24</option>
+      <option>30</option>
+      <option>42</option>
+      <option>72</option>
+    </select>
+    <select name="textareafontcolor" id="textareafontcolor" title="Textarea Font Color">
+      <option>red</option>
+      <option>blue</option>
+      <option>purple</option>
+      <option>black</option>
+      <option>white</option>
+      <option>pink</option>
+      <option>green</option>
+      <option>yellow</option>
+      <option>brown</option>
+      <option>orange</option>
+      <option>aqua</option>
+    </select>
+  </div>
+
+    <textarea name="" id="txtInput" class="styled-text-area" placeholder="Write Something Here"></textarea>
+
+    <div class="footer">
+      <p>Zakky Ali 2021</p>
+      <p>Project 3</p>
+    </div>
+    
+
+    <script src= "main.js"></script>
+    <script src= "bootstrap\js\bootstrap.min.js"></script>
+    
+</body>
+</html>
